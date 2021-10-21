@@ -4,25 +4,41 @@ import i18n from 'i18next';
 // import LanguageDetector from 'i18next-browser-languagedetector';
 import { initReactI18next } from 'react-i18next';
 
-// const translationEn = {"Welcome to React": "Welcome to React and react-i18next"}
-// const translationRu = {"Welcome to React": "Добро пожаловать в React и react-i18next"}
+const tky={
+  "башкы":"башкы",
+  "О нас":"биз ({{count}})тууралуу",
+  "Наши курсы":"курстар жонундо",
+  "IT компания":"биздин компания",
+  " Новости": "жанылыктар",
+  "Фотогалерея":"суроттор",
+
+}
+const tru={
+  "главный":"главный", 
+   "О нас":"О ({{count}})нас",
+   "Наши курсы":"Наши курсы",
+   "IT компания":"IT компания",
+   "Новости":"Новости",
+   "Фотогалерея":"Фотогалерея"
+
+}
 
 
 i18n
-  .use(initReactI18next) // bind react-i18next to the instance
+  .use(initReactI18next) 
   .init({
     debug: true,
 
     resources: {
-      en: {
-        translation: {"Welcome to React": "Welcome to React and react-i18next"}
+      ky: {
+        translation: tky
           },
       ru: {
-        translation: {"Welcome to React": "Добро пожаловать в React и react-i18next"}
+        translation: tru
         }
       },
 
-       lng: "ru", // if you're using a language detector, do not define the lng option
+       lng: 'ru', // if you're using a language detector, do not define the lng option
     interpolation: {
       escapeValue: false, // not needed for react!!
     },

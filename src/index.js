@@ -3,8 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './app/App';
 import './component/i18';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import reportWebVitals from './reportWebVitals';
+// import HNavbar from './component/HNavbar';
 
 ReactDOM.render(
   <React.StrictMode>
